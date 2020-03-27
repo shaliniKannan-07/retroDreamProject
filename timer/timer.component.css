@@ -1,0 +1,38 @@
+  .blink {
+      animation: blink 2s steps(5, start) infinite;
+      color: red;
+      -webkit-animation: blink 1s steps(5, start) infinite;
+    }
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+  i:hover{
+      color: gray;
+      border-radius: 100%;
+    }
+    i{   
+      color:black;   
+      font-size: 50opx
+    }
+   
+    .default{
+      cursor: pointer;
+    }
+   .disabled{
+     cursor: none;
+     pointer-events: none;
+   }
+.material-icons{
+  font-size: 30px;
+  margin-top:15px;
+}
+.countDown{
+  font-size: 20px;
+}

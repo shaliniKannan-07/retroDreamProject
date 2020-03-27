@@ -1,0 +1,21 @@
+
+
+
+<div>
+    <span class="default" [ngClass]="{'disabled':skip==true}" (click)=submit()>
+        <i *ngIf="show" class="material-icons blink">timer</i>
+        <i *ngIf="!show" class="material-icons">timer</i>
+    </span>
+    <span class="option" *ngIf=scroll>
+        <select (change)="startTimer($event)">
+            <option>Choose your Interval</option>
+            <option value=1>1 min</option>
+            <option value=3>3 mins</option>
+            <option value=5>5 mins</option>
+            <option value=10>10 mins</option>
+            <option value=15>15 mins</option>
+        </select>
+    </span>  
+    <span class="countDown"> {{min|number:'2.0-0'}}:{{sec|number:'2.0-0'}} </span>
+    <span class="default" (click)="reset()" *ngIf=skip><i class="material-icons">highlight_off</i></span>
+</div>
