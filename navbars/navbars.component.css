@@ -1,0 +1,55 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .chip {
+      float: right;
+      color: white;
+      margin-left: 90%;
+
+  }
+  
+ 
+ 
+
+
+  .emoji {
+      height: 10%;
+      width: 10%;
+  }
+   
+  .bulb{
+    height: 5%;
+    width: 9%;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .btn {
+    margin-left: 78%; 
+    }
+  
